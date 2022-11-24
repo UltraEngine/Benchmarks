@@ -6,7 +6,7 @@ Performance benchmarks comparing Ultra Engine, Leadwerks, and Unity.
 
 [FRAPS](https://www.fraps.com) can be used to measure the framerate. Some other FPS counter overlays will reduce performance significantly enough to alter your readings, by a lot.
 
-[TechPowerUp GPU-Z](https://www.techpowerup.com/download/gpu-z/) can be used to measure GPU utilization. Windows task manager does not provide an accurate measure of this metric.
+[TechPowerUp GPU-Z](https://www.techpowerup.com/download/gpu-z/) can be used to measure GPU utilization. Windows task manager does not correctly measure this metric.
 
 ## Results
 
