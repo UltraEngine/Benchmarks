@@ -10,17 +10,34 @@ All measurements were recorded using a PC with a quad-core Intel Core i7-7700K C
 
 | Engine | GPU Utilization | Framerate |
 |--|--|--|
-| Leadwerks | 8% | 52 |
+| Leadwerks (OpenGL) | 8% | 52 |
 | Unity (DX11) | 4% | 40 |
 | Unity (Vulkan) | 4% | 40 |
-| Ultra Engine | 95% | 1206 |
+| Ultra Engine (Vulkan) | 95% | 1206 |
 
 ### Animation Test
 
 | Engine | GPU Utilization | Framerate |
 |--|--|--|
-| Leadwerks | 1% | 5 |
+| Leadwerks (OpenGL) | 1% | 5 |
 | Unity (DX11) | 45% | 62 |
 | Unity (Vulkan) | 45% | 64 |
-| Ultra Engine | 96% | 1179 |
+| Ultra Engine (Vulkan) | 96% | 1179 |
 
+### Lighting Test
+
+| Engine | GPU Utilization | Framerate |
+|--|--|--|
+| Leadwerks (OpenGL) | 49% | 704 |
+| Unity (DX11) | 33% | 90 |
+| Unity (Vulkan) | 30% | 74 |
+| Ultra Engine (Vulkan) | 96% | 1456 |
+
+### Unique Geometry Test
+
+| Engine | GPU Utilization | Framerate |
+|--|--|--|
+| Leadwerks (OpenGL) | 10% | 49 |
+| Unity (DX11) | 5% | 2 |
+| Unity (Vulkan) | 4% | 2 |
+| Ultra Engine (Vulkan) | 63% | 6213 |
