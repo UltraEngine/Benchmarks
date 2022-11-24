@@ -14,3 +14,13 @@ All measurements were recorded using a PC with a quad-core Intel Core i7-7700K C
 | Unity (DX11) | 4% | 40 |
 | Unity (Vulkan) | 4% | 40 |
 | Ultra Engine | 95% | 1206 |
+
+### Animation Test
+
+| Engine | GPU Utilization | Framerate |
+|--|--|--|
+| Leadwerks | 1% | 5 |
+| Unity (DX11) | 45% | 62 |
+| Unity (Vulkan) | 45% | 64 |
+| Ultra Engine | 96% | 1179 |
+
