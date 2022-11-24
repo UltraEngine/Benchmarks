@@ -4,7 +4,7 @@ Performance benchmarks comparing Ultra Engine, Leadwerks, and Unity.
 
 ## Diagnostic Tools
 
-[FRAPS](https://www.fraps.com) can be used to measure the framerate. Some FPS counter overlays will reduce performance significantly enough to alter your readings, by a lot.
+[FRAPS](https://www.fraps.com) can be used to measure the framerate. Some other FPS counter overlays will reduce performance significantly enough to alter your readings, by a lot.
 
 [TechPowerUp GPU-Z](https://www.techpowerup.com/download/gpu-z/) can be used to measure GPU utilization. Window task manager does not provide a correct measure of this metric.
 
