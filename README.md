@@ -2,6 +2,12 @@
 
 Performance benchmarks comparing Ultra Engine, Leadwerks, and Unity.
 
+## Diagnostic Tools
+
+[FRAPS](https://www.fraps.com) can be used to measure the framerate. Some FPS counter overlays will reduce performance significantly enough to alter your readings, by a lot.
+
+[TechPowerUp GPU-Z](https://www.techpowerup.com/download/gpu-z/) can be used to measure GPU utilization. Window task manager does not provide a correct measure of this metric.
+
 ## Results
 
 All measurements were recorded using a PC with a quad-core Intel Core i7-7700K CPU @4.20 GHz and an Nvidia GeForce 1080 GTX GPU with driver 471.41 installed, on Windows 10.
