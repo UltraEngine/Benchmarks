@@ -1,0 +1,36 @@
+{
+	"shaderFamily":
+	{
+		"static":
+		{
+			"float":
+			{
+				"OPAQUE":
+				{
+					"default":
+					{
+						"base":
+						{
+							"vertex": "Shaders/PostEffect.vert.spv",
+							"fragment": "Shaders/Sky.frag.spv"
+						}
+					}
+				}
+			},
+			"double":
+			{
+				"OPAQUE":
+				{
+					"default":
+					{
+						"base":
+						{
+							"vertex": "Shaders/PostEffect_64f.vert.spv",
+							"fragment": "Shaders/Sky_64f.frag.spv"
+						}
+					}
+				}
+			}
+		}
+	}
+}

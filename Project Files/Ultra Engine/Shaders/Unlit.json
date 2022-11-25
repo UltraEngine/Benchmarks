@@ -1,0 +1,172 @@
+{
+	"shaderFamily":
+	{
+		"root": "./PBR.json",
+		"static":
+		{
+			"float":
+			{
+				"OPAQUE":
+				{
+					"default":
+					{
+						"base":
+						{
+							"fragment": "Shaders/Unlit.frag.spv",
+							"transparency":"Shaders/Unlit_transparency.frag.spv"
+						}
+					},
+					"isolines":
+					{
+						"base":
+						{
+							"fragment": "Shaders/Unlit_Tess.frag.spv"
+						}
+					},
+					"triangles":
+					{
+						"base":
+						{
+							"fragment": "Shaders/Unlit_Tess.frag.spv"
+						}
+					},
+					"quads":
+					{
+						"base":
+						{
+							"fragment": "Shaders/Unlit_Tess.frag.spv"
+						}
+					}
+				},
+				"MASK":
+				{
+					"default":
+					{
+						"base":
+						{
+							"fragment": "Shaders/Unlit_Masked.frag.spv",
+							"transparency":"Shaders/Unlit_Masked_Transparency.frag.spv"
+						}
+					},
+					"isolines":
+					{
+						"base":
+						{
+							"fragment": "Shaders/Unlit_Tess_Masked.frag.spv"
+						}
+					},
+					"triangles":
+					{
+						"base":
+						{
+							"fragment": "Shaders/Unlit_Tess_Masked.frag.spv"
+						}
+					},
+					"quads":
+					{
+						"base":
+						{
+							"fragment": "Shaders/Unlit_Tess_Masked.frag.spv"
+						}
+					}
+				}
+			},
+			"double":
+			{
+				"OPAQUE":
+				{
+					"default":
+					{
+						"base":
+						{
+							"fragment": "Shaders/Unlit_64f.frag.spv"
+						}
+					}
+				}
+			}
+		},
+		"dynamic":
+		{
+			"float":
+			{
+				"OPAQUE":
+				{
+					"default":
+					{
+						"base":
+						{
+							"fragment": "Shaders/Unlit_dynamic.frag.spv",
+							"transparency":"Shaders/unlit_transparency_dynamic.frag.spv"
+						}
+					},
+					"isolines":
+					{
+						"base":
+						{
+							"fragment": "Shaders/Unlit_Tess_dynamic.frag.spv"
+						}
+					},
+					"triangles":
+					{
+						"base":
+						{
+							"fragment": "Shaders/Unlit_Tess_dynamic.frag.spv"
+						}
+					},
+					"quads":
+					{
+						"base":
+						{
+							"fragment": "Shaders/Unlit_Tess_dynamic.frag.spv"
+						}
+					}
+				},
+				"MASK":
+				{
+					"default":
+					{
+						"base":
+						{
+							"fragment": "Shaders/Unlit_Masked_dynamic.frag.spv",
+							"transparency":"Shaders/unlit_masked_transparency_dynamic.frag.spv"
+						}
+					},
+					"isolines":
+					{
+						"base":
+						{
+							"fragment": "Shaders/Unlit_Tess_Masked_dynamic.frag.spv"
+						}
+					},
+					"triangles":
+					{
+						"base":
+						{
+							"fragment": "Shaders/Unlit_Tess_Masked_dynamic.frag.spv"
+						}
+					},
+					"quads":
+					{
+						"base":
+						{
+							"fragment": "Shaders/Unlit_Tess_Masked_dynamic.frag.spv"
+						}
+					}
+				}
+			},
+			"double":
+			{
+				"OPAQUE":
+				{
+					"default":
+					{
+						"base":
+						{
+							"fragment": "Shaders/Unlit_64f_dynamic.frag.spv"
+						}
+					}
+				}
+			}
+		}		
+	}
+}

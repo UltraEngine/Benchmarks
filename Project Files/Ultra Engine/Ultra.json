@@ -1,0 +1,15 @@
+{
+	"project": {
+		"name": "Benchmarks",
+		"templates": [
+			"C++",
+			"Common"
+		],
+		"validationLayers": {
+			"debug": [
+				"VK_LAYER_KHRONOS_validation"
+			],
+			"release": []
+		}
+	}
+}

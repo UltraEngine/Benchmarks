@@ -1,0 +1,173 @@
+{
+	"shaderFamily":
+	{
+		"root": "./PBR.json",
+		"static":
+		{
+			"float":
+			{
+				"OPAQUE":
+				{
+					"default":
+					{
+						"base":
+						{
+							"vertex": "Shaders/WidgetBlock.vert.spv",
+							"fragment": "Shaders/WidgetBlock.frag.spv",
+							"transparency":"Shaders/WidgetBlock_transparency.frag.spv"
+						}
+					},
+					"isolines":
+					{
+						"base":
+						{
+							"fragment": "Shaders/WidgetBlock_Tess.frag.spv"
+						}
+					},
+					"triangles":
+					{
+						"base":
+						{
+							"fragment": "Shaders/WidgetBlock_Tess.frag.spv"
+						}
+					},
+					"quads":
+					{
+						"base":
+						{
+							"fragment": "Shaders/WidgetBlock_Tess.frag.spv"
+						}
+					}
+				},
+				"MASK":
+				{
+					"default":
+					{
+						"base":
+						{
+							"fragment": "Shaders/WidgetBlock_Masked.frag.spv",
+							"transparency":"Shaders/WidgetBlock_Masked_Transparency.frag.spv"
+						}
+					},
+					"isolines":
+					{
+						"base":
+						{
+							"fragment": "Shaders/WidgetBlock_Tess_Masked.frag.spv"
+						}
+					},
+					"triangles":
+					{
+						"base":
+						{
+							"fragment": "Shaders/WidgetBlock_Tess_Masked.frag.spv"
+						}
+					},
+					"quads":
+					{
+						"base":
+						{
+							"fragment": "Shaders/WidgetBlock_Tess_Masked.frag.spv"
+						}
+					}
+				}
+			},
+			"double":
+			{
+				"OPAQUE":
+				{
+					"default":
+					{
+						"base":
+						{
+							"fragment": "Shaders/WidgetBlock_64f.frag.spv"
+						}
+					}
+				}
+			}
+		},
+		"dynamic":
+		{
+			"float":
+			{
+				"OPAQUE":
+				{
+					"default":
+					{
+						"base":
+						{
+							"fragment": "Shaders/WidgetBlock_dynamic.frag.spv",
+							"transparency":"Shaders/WidgetBlock_transparency_dynamic.frag.spv"
+						}
+					},
+					"isolines":
+					{
+						"base":
+						{
+							"fragment": "Shaders/WidgetBlock_Tess_dynamic.frag.spv"
+						}
+					},
+					"triangles":
+					{
+						"base":
+						{
+							"fragment": "Shaders/WidgetBlock_Tess_dynamic.frag.spv"
+						}
+					},
+					"quads":
+					{
+						"base":
+						{
+							"fragment": "Shaders/WidgetBlock_Tess_dynamic.frag.spv"
+						}
+					}
+				},
+				"MASK":
+				{
+					"default":
+					{
+						"base":
+						{
+							"fragment": "Shaders/WidgetBlock_Masked_dynamic.frag.spv",
+							"transparency":"Shaders/WidgetBlock_masked_transparency_dynamic.frag.spv"
+						}
+					},
+					"isolines":
+					{
+						"base":
+						{
+							"fragment": "Shaders/WidgetBlock_Tess_Masked_dynamic.frag.spv"
+						}
+					},
+					"triangles":
+					{
+						"base":
+						{
+							"fragment": "Shaders/WidgetBlock_Tess_Masked_dynamic.frag.spv"
+						}
+					},
+					"quads":
+					{
+						"base":
+						{
+							"fragment": "Shaders/WidgetBlock_Tess_Masked_dynamic.frag.spv"
+						}
+					}
+				}
+			},
+			"double":
+			{
+				"OPAQUE":
+				{
+					"default":
+					{
+						"base":
+						{
+							"fragment": "Shaders/WidgetBlock_64f_dynamic.frag.spv"
+						}
+					}
+				}
+			}
+		}		
+	}
+}
