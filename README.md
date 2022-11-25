@@ -20,6 +20,11 @@ This measures the performance of a large number of lights against a large number
 
 This test is the most representative of an actual game level, with many different unique objects. It measures the overhead of draw calls and the efficiency of the mesh batching system.
 
+## System Requirements
+
+- Windows 10
+- Discrete GPU with support for Vulkan 1.3
+
 ## Diagnostic Tools
 
 [FRAPS](https://www.fraps.com) can be used to measure the framerate. Some other FPS counter overlays will reduce performance significantly enough to alter your readings, by a lot.
