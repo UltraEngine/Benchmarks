@@ -31,7 +31,7 @@ This test is the most representative of an actual game level, with many differen
 ## System Requirements
 
 - Windows 10 or greater
-- Discrete GPU with support for Vulkan 1.3
+- Discrete GPU with support for Vulkan 1.3. Integrated graphics are not yet supported.
 
 ## Diagnostic Tools
 
