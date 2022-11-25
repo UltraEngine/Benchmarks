@@ -12,14 +12,16 @@ local context = Context:Create(window,0)
 
 --Create a world
 local world = World:Create()
+world:SetAmbientLight(1,1,1,1)
 
 --Create camera
 local camera = Camera:Create()
 camera:SetPosition(0,0,-count*2)
-camera:SetClearColor(0,0,1,1)
+camera:SetClearColor(0.25,0.25,0.25,1)
 
 --Create box
 local box = Model:Box()
+box:SetColor(0.125,0.125,0.125,1)
 
 --Boxes
 local boxes = {}
