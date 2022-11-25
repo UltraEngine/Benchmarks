@@ -10,13 +10,13 @@ local context = Context:Create(window,0)
 
 --Create a world
 local world = World:Create()
-world:SetAmbientLight(0.125,0.125,0.125,1)
+world:SetAmbientLight(0,0,0,1)
 
 --Create camera
 local camera = Camera:Create()
 camera:SetRotation(45,0,0)
 camera:SetPosition(0,25,-25)
-camera:SetClearColor(0.125,0.125,0.125,1)
+camera:SetClearColor(0.25,0.25,0.25,1)
 
 --Create the ground
 local ground = Model:Box(80,1,80)
