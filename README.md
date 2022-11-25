@@ -8,17 +8,25 @@ Four tests were created to isolate and measure different aspects of the graphics
 
 This measures the performance of object culling speed.
 
+![](instanced.png)
+
 ### Animation
 
 This demonstrates the efficiency of the animation pipeline. Each character has a relatively low polygon count, because the vertex shader speed is probably going to be similar in each engine. This is meant to test the efficiency of bone data transfer, and determine if animation introduces any overhead to the renderer.
+
+![](animation.png)
 
 ### Lighting
 
 This measures the performance of a large number of lights against a large number of identical objects. I was surprised to find that Unity re-draws every single shadow map every single frame, instead of only updating shadows when an object moves.
 
+![](lighting.png)
+
 ### Unique Geometry
 
 This test is the most representative of an actual game level, with many different unique objects. It measures the overhead of draw calls and the efficiency of the mesh batching system.
+
+![](unique.png)
 
 ## System Requirements
 
