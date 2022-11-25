@@ -12,7 +12,7 @@ This measures the performance of object culling speed.
 
 ### Animation
 
-This demonstrates the efficiency of the animation pipeline. Each character has a relatively low polygon count, because the vertex shader speed is probably going to be similar in each engine. This is meant to test the efficiency of bone data transfer, and determine if animation introduces any overhead to the renderer.
+This demonstrates the efficiency of the animation pipeline. Each character has a unique skeleton and a relatively low polygon count, because the vertex shader speed is probably going to be similar in each engine. This is meant to test the efficiency of skeleton data transfer, and determine if animation introduces any overhead to the renderer.
 
 ![](animation.png)
 
