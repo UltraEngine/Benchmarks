@@ -1,0 +1,47 @@
+{
+	"shaderFamily":
+	{
+		"root": "./PBR.json",
+		"static":
+		{
+			"float":
+			{
+				"MASK":
+				{
+					"default":
+					{
+						"base":
+						{
+							"fragment": "Shaders/SpecularGloss_Masked.frag.spv"
+						}
+					}
+				},
+				"OPAQUE":
+				{
+					"default":
+					{
+						"base":
+						{
+							"fragment": "Shaders/SpecularGloss.frag.spv",
+							"transparency": "Shaders/SpecularGloss_Transparency.frag.spv"
+						}
+					},		
+					"triangles":
+					{
+						"base":
+						{
+							"fragment": "Shaders/SpecularGloss.frag.spv"
+						}
+					},
+					"quads":
+					{
+						"base":
+						{
+							"fragment": "Shaders/SpecularGloss.frag.spv"
+						}
+					}
+				}
+			}
+		}			
+	}
+}
