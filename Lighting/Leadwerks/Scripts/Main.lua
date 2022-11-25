@@ -26,6 +26,7 @@ ground:SetPosition(0,-0.5,0)
 local lights = {}
 
 local light = PointLight:Create()
+light:SetColor(0.5,0.5,0.5,1)
 light:SetRange(0.1,20)
 
 local startpos = {}
