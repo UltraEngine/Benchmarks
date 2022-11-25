@@ -1,6 +1,6 @@
 # Ultra Engine Benchmarks
 
-Performance benchmarks comparing Ultra Engine, Leadwerks, and Unity.
+Rendering performance benchmarks comparing Ultra Engine, Leadwerks, and Unity.
 
 Four tests were created to isolate and measure different aspects of the graphics pipeline in each engine.
 
