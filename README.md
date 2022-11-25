@@ -43,7 +43,7 @@ This test is the most representative of an actual game level, with many differen
 
 In each test, Ultra Engine outperforms Leadwerks, Unity, or both by a factor greater than 10x. All measurements were recorded using a PC with a quad-core Intel Core i7-7700K CPU @4.20 GHz and an Nvidia GeForce 1080 GTX GPU with driver 471.41 installed, on Windows 10.
 
-### Instanced Geometry Test
+### Instanced Geometry
 
 | Engine | GPU Utilization | Framerate |
 |--|--|--|
@@ -52,7 +52,7 @@ In each test, Ultra Engine outperforms Leadwerks, Unity, or both by a factor gre
 | Unity (Vulkan) | 4% | 40 |
 | Ultra Engine (Vulkan) | 95% | 1206 |
 
-### Animation Test
+### Animation
 
 | Engine | GPU Utilization | Framerate |
 |--|--|--|
@@ -61,7 +61,7 @@ In each test, Ultra Engine outperforms Leadwerks, Unity, or both by a factor gre
 | Unity (Vulkan) | 45% | 64 |
 | Ultra Engine (Vulkan) | 96% | 1179 |
 
-### Lighting Test
+### Lighting
 
 | Engine | GPU Utilization | Framerate |
 |--|--|--|
@@ -70,7 +70,7 @@ In each test, Ultra Engine outperforms Leadwerks, Unity, or both by a factor gre
 | Unity (Vulkan) | 30% | 74 |
 | Ultra Engine (Vulkan) | 96% | 1456 |
 
-### Unique Geometry Test
+### Unique Geometry
 
 | Engine | GPU Utilization | Framerate |
 |--|--|--|
