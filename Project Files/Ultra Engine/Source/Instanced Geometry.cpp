@@ -43,7 +43,6 @@ int main(int argc, const char* argv[])
 			} 
 		}
 	}
-	
 	box = NULL;
 
 	//Main loop
