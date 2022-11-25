@@ -121,7 +121,8 @@
     <PostBuildEvent>
       <Message>
       </Message>
-      <Command>"$(UltraEnginePath)\Tools\upx.exe" "$(ProjectName).exe"</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
