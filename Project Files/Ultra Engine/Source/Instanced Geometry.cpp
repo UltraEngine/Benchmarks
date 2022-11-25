@@ -17,6 +17,7 @@ int main(int argc, const char* argv[])
 
 	//Create world
 	auto world = CreateWorld();
+	world->SetAmbientLight(1);
 
 	//Create camera
 	auto camera = CreateCamera(world);
