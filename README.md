@@ -6,7 +6,7 @@ Four tests were created to isolate and measure different aspects of the graphics
 
 ### Instanced Geometry
 
-This measures the performance of object culling speed.
+This measures the performance of object culling speed in a worst-case scenario where frustum culling removes no objects.
 
 ![](instanced.png)
 
@@ -18,7 +18,7 @@ This demonstrates the efficiency of the animation pipeline. Each character has a
 
 ### Lighting
 
-This measures the performance of a large number of lights against a large number of identical objects. I was surprised to find that Unity re-draws every single shadow map every single frame, instead of only updating shadows when an object moves.
+This measures the performance of a large number of lights against a large number of identical objects. I was surprised to find that Unity redraws every single shadow map every single frame, instead of only updating shadows when an object moves.
 
 ![](lighting.png)
 
