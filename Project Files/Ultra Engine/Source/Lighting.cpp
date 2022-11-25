@@ -22,6 +22,7 @@ int main(int argc, const char* argv[])
 	camera->SetClearColor(0.25);
 	camera->Turn(45, 0, 0);
 	camera->SetPosition(0, 25, -25);
+	camera->SetDepthPrepass(false);
 
 	//Create the ground
 	auto ground = CreateBox(world, 80, 1, 80);
