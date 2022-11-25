@@ -6,7 +6,7 @@ Four tests were created to isolate and measure different aspects of the graphics
 
 ### Instanced Geometry
 
-This measures the performance of object culling speed.
+This measures the performance of object culling speed in a worst-case scenario where frustum culling removes no objects.
 
 ![](instanced.png)
 
