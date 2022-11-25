@@ -10,12 +10,13 @@ local context = Context:Create(window,0)
 
 --Create a world
 local world = World:Create()
+world:SetAmbientLight(1,1,1)
 
 --Create camera
 local camera = Camera:Create()
 camera:Turn(45,0,0)
 camera:SetPosition(0,10,-20)
-camera:SetClearColor(0,0,1,1)
+camera:SetClearColor(0.25,0.25,0.25,1)
 
 --Load model
 local model = Model:Load("Models/merc.mdl")
