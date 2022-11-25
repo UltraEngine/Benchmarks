@@ -27,7 +27,10 @@ int main(int argc, const char* argv[])
 	//Create box
 	auto box = CreateBox(world);
 	box->SetCollider(NULL);
-
+	auto mtl = CreateMaterial();
+	mtl->SetShaderFamily(LoadShaderFamily("Shaders/Unlit.json"));
+	model->SetMaterial(mtl);
+	
 	//Create instances
 	std::vector<shared_ptr<Entity> > boxes;
 	boxes.reserve(count * count);
