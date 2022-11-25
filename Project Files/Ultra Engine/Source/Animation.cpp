@@ -22,7 +22,8 @@ int main(int argc, const char* argv[])
 	camera->SetClearColor(0.25);
 	camera->Turn(45, 0, 0);
 	camera->SetPosition(0, 10, -20);
-	
+	camera->SetDepthPrepass(false);
+
 	//Load model
 	auto model = LoadModel(world, "Models/merc_lores.mdl");
 	model->SetColor(0.8);

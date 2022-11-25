@@ -23,14 +23,12 @@ int main(int argc, const char* argv[])
 	auto camera = CreateCamera(world);
 	camera->SetPosition(0, 0, -count);
 	camera->SetClearColor(0.25);
+	camera->SetDepthPrepass(false);
 
 	//Create box
 	auto box = CreateBox(world);
 	box->SetCollider(NULL);
-	auto mtl = CreateMaterial();
-	mtl->SetShaderFamily(LoadShaderFamily("Shaders/Unlit.json"));
-	model->SetMaterial(mtl);
-	
+
 	//Create instances
 	std::vector<shared_ptr<Entity> > boxes;
 	boxes.reserve(count * count);

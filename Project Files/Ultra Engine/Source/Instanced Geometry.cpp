@@ -6,31 +6,28 @@ int main(int argc, const char* argv[])
 {
 	const int count = 32;
 
-	//Get the displays
-	auto displays = GetDisplays();
+    //Get the displays
+    auto displays = GetDisplays();
 
-	//Create a window
-	auto window = CreateWindow("Instanced Geometry", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
+    //Create a window
+    auto window = CreateWindow("Instanced Geometry", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
 
 	//Create framebuffer
 	auto framebuffer = CreateFramebuffer(window);
 
-	//Create world
-	auto world = CreateWorld();
-	world->SetAmbientLight(1);
+    //Create world
+    auto world = CreateWorld();
 
 	//Create camera
 	auto camera = CreateCamera(world);
 	camera->SetPosition(0, 0, -count * 2);
 	camera->SetClearColor(0.25);
+	camera->SetDepthPrepass(false);
 
 	//Create box
 	auto box = CreateBox(world);
 	box->SetCollider(NULL);
-	auto mtl = CreateMaterial();
-	mtl->SetShaderFamily(LoadShaderFamily("Shaders/Unlit.json"));
-	model->SetMaterial(mtl);
-	
+
 	//Create instances
 	std::vector<shared_ptr<Entity> > boxes;
 	boxes.reserve(count * count * count);
@@ -47,13 +44,14 @@ int main(int argc, const char* argv[])
 			} 
 		}
 	}
+	
 	box = NULL;
 
-	//Main loop
-	while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
-	{
-		world->Update();
-		world->Render(framebuffer, false);
-	}
-	return 0;
+    //Main loop
+    while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
+    {
+        world->Update();
+        world->Render(framebuffer, false);
+    }
+    return 0;
 }

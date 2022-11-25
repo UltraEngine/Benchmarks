@@ -22,12 +22,11 @@ int main(int argc, const char* argv[])
 	camera->SetClearColor(0.25);
 	camera->Turn(45, 0, 0);
 	camera->SetPosition(0, 25, -25);
-	camera->SetDepthPrepass(false);
-
+	
 	//Create the ground
 	auto ground = CreateBox(world, 80, 1, 80);
 	ground->SetPosition(0, -0.5, 0);
-
+	
 	//Create lights
 	std::vector<std::shared_ptr<Entity> > lights;
 	lights.reserve(5 * 5);
