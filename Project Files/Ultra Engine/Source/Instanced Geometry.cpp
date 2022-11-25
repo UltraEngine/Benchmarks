@@ -6,17 +6,17 @@ int main(int argc, const char* argv[])
 {
 	const int count = 32;
 
-    //Get the displays
-    auto displays = GetDisplays();
+	//Get the displays
+	auto displays = GetDisplays();
 
-    //Create a window
-    auto window = CreateWindow("Instanced Geometry", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
+	//Create a window
+	auto window = CreateWindow("Instanced Geometry", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
 
 	//Create framebuffer
 	auto framebuffer = CreateFramebuffer(window);
 
-    //Create world
-    auto world = CreateWorld();
+	//Create world
+	auto world = CreateWorld();
 
 	//Create camera
 	auto camera = CreateCamera(world);
@@ -46,11 +46,11 @@ int main(int argc, const char* argv[])
 	
 	box = NULL;
 
-    //Main loop
-    while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
-    {
-        world->Update();
-        world->Render(framebuffer, false);
-    }
-    return 0;
+	//Main loop
+	while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
+	{
+		world->Update();
+		world->Render(framebuffer, false);
+	}
+	return 0;
 }
