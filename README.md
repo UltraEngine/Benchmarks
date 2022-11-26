@@ -32,6 +32,8 @@ This test is the most representative of an actual game level, with many differen
 
 - Windows 10 or greater
 - Discrete GPU with support for Vulkan 1.3. Integrated graphics are not yet supported.
+- [Visual Studio Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170). (You probably already have this installed.)
+- The Leadwerks builds require [OpenAL](https://openal.org/downloads/) to be installed.
 
 ## Diagnostic Tools
 
