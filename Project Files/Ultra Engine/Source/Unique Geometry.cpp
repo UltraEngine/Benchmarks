@@ -48,6 +48,17 @@ int main(int argc, const char* argv[])
 	//Main loop
 	while (window->Closed() == false and window->KeyDown(KEY_ESCAPE) == false)
 	{
+		//Check for failed renderer initialization
+		while (PeekEvent())
+		{
+			const auto e = WaitEvent();
+			if (e.id == EVENT_STARTRENDERER and e.data == 0)
+			{
+				Notify("Renderer failed to intialize.", true);
+				return 0;
+			}
+		}		
+		
 		world->Update();
 		world->Render(framebuffer, false);
 	}
