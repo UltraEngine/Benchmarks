@@ -57,7 +57,7 @@ int main(int argc, const char* argv[])
 			const auto e = WaitEvent();
 			if (e.id == EVENT_STARTRENDERER and e.data == 0)
 			{
-				Notify("Renderer failed to intialize.", true);
+				Notify(L"Renderer failed to intialize.\n\n" + e.text, true);
 				return 0;
 			}
 		}
