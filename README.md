@@ -35,6 +35,8 @@ This test is the most representative of an actual game level, with many differen
 - [Visual Studio Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) (You probably already have this installed)
 - The Leadwerks builds require [OpenAL](https://openal.org/downloads/) to be installed
 
+Note: Some AMD cards are currently having issues initializing, it's being worked on and should be an easy fix.
+
 ## Diagnostic Tools
 
 [FRAPS](https://www.fraps.com) can be used to measure the framerate. Some other FPS counter overlays will reduce performance significantly enough to alter your readings, by a lot.
