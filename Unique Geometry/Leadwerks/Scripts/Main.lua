@@ -41,7 +41,7 @@ while window:Closed()==false do
 	Time:Update()
 	world:Update()
 	world:Render()
-	--context:SetBlendMode(1)
-	--context:DrawText(Math:Round(Time:UPS()),2,2)
+	context:SetBlendMode(1)
+	context:DrawText(Math:Round(Time:UPS()),2,2)
 	context:Sync(false)	
 end
