@@ -39,7 +39,7 @@ Note: Some AMD cards are currently having issues initializing, it's being worked
 
 ## Diagnostic Tools
 
-[FRAPS](https://www.fraps.com) can be used to measure the framerate. Some other FPS counter overlays will reduce performance significantly enough to alter your readings, by a lot.
+Built-in FPS counters are provided. [FRAPS](https://www.fraps.com) can also be used to measure the framerate, but is reportedly not displaying on some Vulkan drivers. Some other FPS counter overlays such as OpenGPU OCAT will reduce performance significantly enough to alter your readings, by a lot, and are not suitable for measuring high frequency framerates.
 
 [TechPowerUp GPU-Z](https://www.techpowerup.com/download/gpu-z/) can be used to measure GPU utilization. Windows task manager does not correctly measure this metric.
 
