@@ -83,7 +83,7 @@ int main(int argc, const char* argv[])
 			const auto e = WaitEvent();
 			if (e.id == EVENT_STARTRENDERER and e.data == 0)
 			{
-				Notify(L"Renderer failed to intialize.\n\n" + e.text, true);
+				Notify(L"Renderer failed to intialize.\n\n" + e.text, "Ultra Engine", true);
 				return 0;
 			}
 		}		
