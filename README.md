@@ -35,8 +35,6 @@ This test is the most representative of an actual game level, with many differen
 - [Visual Studio Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) (You probably already have this installed)
 - The Leadwerks builds require [OpenAL](https://openal.org/downloads/) to be installed
 
-Note: Some AMD cards are currently having issues initializing, it's being worked on and should be an easy fix.
-
 ## Diagnostic Tools
 
 [TechPowerUp GPU-Z](https://www.techpowerup.com/download/gpu-z/) can be used to measure GPU utilization. Windows task manager does not correctly measure this metric.
@@ -45,7 +43,7 @@ Built-in FPS counters are provided. [FRAPS](https://www.fraps.com) can also be u
 
 ## Results
 
-In each test, Ultra Engine outperforms Leadwerks, Unity, or both by a factor greater than 10x. All measurements were recorded using a PC with a quad-core Intel Core i7-7700K CPU @4.20 GHz and an Nvidia GeForce 1080 GTX GPU with driver 471.41 installed, on Windows 10.
+In each test, Ultra Engine outperforms Leadwerks, Unity, or both by a factor greater than 10x. GPU utilization is consistently higher with Ultra Engine. All measurements were recorded using a PC with a quad-core Intel Core i7-7700K CPU @4.20 GHz and an Nvidia GeForce 1080 GTX GPU with driver 471.41 installed, on Windows 10.
 
 ### Instanced Geometry
 
