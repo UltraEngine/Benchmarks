@@ -47,36 +47,36 @@ In each test, Ultra Engine outperforms Leadwerks, Unity, or both by a factor gre
 
 ### Instanced Geometry
 
-| Engine | GPU Utilization | Framerate |
-|--|--|--|
-| Leadwerks (OpenGL) | 8% | 52 |
-| Unity (DX11) | 4% | 40 |
-| Unity (Vulkan) | 4% | 40 |
-| Ultra Engine (Vulkan) | 95% | 1206 |
+| Engine | API | GPU Utilization | Framerate |
+|--|--|--|--|
+| Leadwerks | OpenGL | 8% | 52 |
+| Unity | DX11 | 4% | 40 |
+| Unity | Vulkan | 4% | 40 |
+| Ultra Engine | Vulkan | 95% | 1206 |
 
 ### Animation
 
-| Engine | GPU Utilization | Framerate |
-|--|--|--|
-| Leadwerks (OpenGL) | 1% | 5 |
-| Unity (DX11) | 45% | 62 |
-| Unity (Vulkan) | 45% | 64 |
-| Ultra Engine (Vulkan) | 96% | 1179 |
+| Engine | API | GPU Utilization | Framerate |
+|--|--|--|--|
+| Leadwerks | OpenGL | 1% | 5 |
+| Unity | DX11 | 45% | 62 |
+| Unity | Vulkan | 45% | 64 |
+| Ultra Engine | Vulkan | 96% | 1179 |
 
 ### Lighting
 
-| Engine | GPU Utilization | Framerate |
-|--|--|--|
-| Leadwerks (OpenGL) | 49% | 704 |
-| Unity (DX11) | 33% | 90 |
-| Unity (Vulkan) | 30% | 74 |
-| Ultra Engine (Vulkan) | 96% | 1456 |
+| Engine | API | GPU Utilization | Framerate |
+|--|--|--|--|
+| Leadwerks | OpenGL | 49% | 704 |
+| Unity | DX11 | 33% | 90 |
+| Unity | Vulkan | 30% | 74 |
+| Ultra Engine  | Vulkan | 96% | 1456 |
 
 ### Unique Geometry
 
-| Engine | GPU Utilization | Framerate |
-|--|--|--|
-| Leadwerks (OpenGL) | 10% | 49 |
-| Unity (DX11) | 5% | 2 |
-| Unity (Vulkan) | 4% | 2 |
-| Ultra Engine (Vulkan) | 63% | 6213 |
+| Engine | API | GPU Utilization | Framerate |
+|--|--|--|--|
+| Leadwerks | OpenGL | 10% | 49 |
+| Unity | DX11 | 5% | 2 |
+| Unity | Vulkan | 4% | 2 |
+| Ultra Engine | Vulkan | 63% | 6213 |
