@@ -54,10 +54,10 @@ int main(int argc, const char* argv[])
 	auto font = LoadFont("Fonts/arial.ttf");
 	auto sprite = CreateSprite(world, font, "", 14);
 	world->RecordStats(true);
-	sprite->SetRenderLayers(1);
+	sprite->SetRenderLayers(2);
 	sprite->SetPosition(2, framebuffer->size.y - font->GetHeight(14) - 2, 0);
 	auto orthocam = CreateCamera(world, PROJECTION_ORTHOGRAPHIC);
-	orthocam->SetRenderLayers(1);
+	orthocam->SetRenderLayers(2);
 	orthocam->SetClearMode(ClearMode(0));
 	orthocam->SetPosition(float(framebuffer->size.x) * 0.5f, float(framebuffer->size.y) * 0.5f, 0);
 
