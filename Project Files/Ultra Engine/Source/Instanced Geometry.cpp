@@ -8,7 +8,7 @@ int main(int argc, const char* argv[])
 
     //Get the displays
     auto displays = GetDisplays();
-
+	 
     //Create a window
     auto window = CreateWindow("Instanced Geometry", 0, 0, 1280, 720, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
 
@@ -21,12 +21,17 @@ int main(int argc, const char* argv[])
 	//Create camera
 	auto camera = CreateCamera(world);
 	camera->SetPosition(0, 0, -count * 2);
-	camera->SetClearColor(0.25);
+	camera->SetClearColor(0.125);
 	camera->SetDepthPrepass(false);
 
-	//Create box
+	//Create box 
 	auto box = CreateBox(world);
 	box->SetCollider(NULL);
+
+	auto mtl = CreateMaterial();
+	mtl->SetColor(0.5f);
+	mtl->SetShaderFamily(LoadShaderFamily("Shaders/Unlit.fam"));
+	box->SetMaterial(mtl);
 
 	//Create instances
 	std::vector<shared_ptr<Entity> > boxes;
@@ -47,15 +52,14 @@ int main(int argc, const char* argv[])
 	
 	box = NULL;
 
-
 	//Fps display
 	auto font = LoadFont("Fonts/arial.ttf");
 	auto sprite = CreateSprite(world, font, "", 14);
 	world->RecordStats(true);
-	sprite->SetRenderLayers(RENDERLAYER_2);
+	sprite->SetRenderLayers(1);
 	sprite->SetPosition(2, framebuffer->size.y - font->GetHeight(14) - 2, 0);
 	auto orthocam = CreateCamera(world, PROJECTION_ORTHOGRAPHIC);
-	orthocam->SetRenderLayers(RENDERLAYER_2);
+	orthocam->SetRenderLayers(1);
 	orthocam->SetClearMode(ClearMode(0));
 	orthocam->SetPosition(float(framebuffer->size.x) * 0.5f, float(framebuffer->size.y) * 0.5f, 0);		
 	
@@ -73,7 +77,7 @@ int main(int argc, const char* argv[])
 			}
 		}	    
 	    
-	sprite->SetText("FPS: " + String(world->renderstats.framerate));	    
+		sprite->SetText("FPS: " + String(world->renderstats.framerate));	    
 	    
         world->Update();
         world->Render(framebuffer, false);

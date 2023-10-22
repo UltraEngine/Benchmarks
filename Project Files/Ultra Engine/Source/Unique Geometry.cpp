@@ -29,6 +29,11 @@ int main(int argc, const char* argv[])
 	auto box = CreateBox(world);
 	box->SetCollider(NULL);
 
+	auto mtl = CreateMaterial();
+	mtl->SetColor(0.5f);
+	mtl->SetShaderFamily(LoadShaderFamily("Shaders/Unlit.fam"));
+	box->SetMaterial(mtl);
+
 	//Create instances
 	std::vector<shared_ptr<Entity> > boxes;
 	boxes.reserve(count * count);
@@ -49,10 +54,10 @@ int main(int argc, const char* argv[])
 	auto font = LoadFont("Fonts/arial.ttf");
 	auto sprite = CreateSprite(world, font, "", 14);
 	world->RecordStats(true);
-	sprite->SetRenderLayers(RENDERLAYER_2);
+	sprite->SetRenderLayers(1);
 	sprite->SetPosition(2, framebuffer->size.y - font->GetHeight(14) - 2, 0);
 	auto orthocam = CreateCamera(world, PROJECTION_ORTHOGRAPHIC);
-	orthocam->SetRenderLayers(RENDERLAYER_2);
+	orthocam->SetRenderLayers(1);
 	orthocam->SetClearMode(ClearMode(0));
 	orthocam->SetPosition(float(framebuffer->size.x) * 0.5f, float(framebuffer->size.y) * 0.5f, 0);
 

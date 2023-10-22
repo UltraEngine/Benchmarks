@@ -1,0 +1,22 @@
+{
+	"shaderfamily":
+	{
+		"static":
+		{
+			"float":
+			{
+				"opaque":
+				{
+					"default":
+					{
+						"base":
+						{
+							"vertex": "Shaders/PostEffect.vert.spv",
+							"fragment": "Shaders/Sky.frag.spv"
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,47 @@
+{
+	"shaderFamily":
+	{
+		"root": "./PBR.json",
+		"static":
+		{
+			"float":
+			{
+				"MASK":
+				{
+					"default":
+					{
+						"base":
+						{
+							"fragment": "Shaders/Classic_Masked.frag.spv"
+						}
+					}
+				},
+				"OPAQUE":
+				{
+					"default":
+					{
+						"base":
+						{
+							"fragment": "Shaders/Classic.frag.spv",
+							"transparency": "Shaders/Classic_Transparency.frag.spv"
+						}
+					},		
+					"triangles":
+					{
+						"base":
+						{
+							"fragment": "Shaders/Classic.frag.spv"
+						}
+					},
+					"quads":
+					{
+						"base":
+						{
+							"fragment": "Shaders/Classic.frag.spv"
+						}
+					}
+				}
+			}
+		}			
+	}
+}

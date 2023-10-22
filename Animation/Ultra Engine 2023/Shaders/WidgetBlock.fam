@@ -1,0 +1,30 @@
+{
+	"shaderfamily":
+	{
+		"hidden": true,
+		"root": "./PBR.fam",
+		"static":
+		{
+			"float":
+			{
+				"opaque":
+				{
+					"default":
+					{
+						"base":
+						{
+							"vertex": "Shaders/WidgetBlock.vert.spv",
+							"fragment": "Shaders/WidgetBlock.frag.spv",
+							"transparency":"Shaders/WidgetBlock.frag.spv"
+						},
+						"depthPass":
+						{
+							"vertex": "Shaders/WidgetBlock.vert.spv",
+							"fragment": "Shaders/DepthPass_WidgetBlock.frag.spv"
+						}
+					}
+				}
+			}
+		}
+	}
+}
