@@ -4,7 +4,7 @@ Rendering performance benchmarks comparing Ultra Engine, Leadwerks, and Unity.
 
 Four tests were created to isolate and measure different aspects of the graphics pipeline in each engine.
 
-The original tests are in the "Ultra Engine" directory. Updated builds are also provided.
+The original tests are in the "Ultra Engine" subdirectories. Updated builds are also provided.
 
 ### Instanced Geometry
 
