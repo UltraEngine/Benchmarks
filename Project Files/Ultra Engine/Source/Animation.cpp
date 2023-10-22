@@ -42,7 +42,7 @@ int main(int argc, const char* argv[])
 		{
 			auto inst = model->Instantiate(world);
 			inst->SetPosition((x - 16.5), 0, (z - 16.5));
-			inst->As<Model>()->Animate(0);
+			inst->As<Model>()->Animate(0, 1, 250, ANIMATION_LOOP, Random(1000));
 			models.push_back(inst);
 		}
 	}
